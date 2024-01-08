@@ -1,7 +1,7 @@
 // Declare variables
 let age = 30;
 let name = 'Leo'; 
-let secureLuggage = True;
+let secureLuggage = true;
 
 // Output the variables using console.log
 console.log('Age:', age);
