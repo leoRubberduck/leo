@@ -1,5 +1,5 @@
 
-let love = 'You used to love me !!';
+let love
 
 
 console.log('First value of love:', love);
