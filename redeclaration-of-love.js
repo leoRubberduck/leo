@@ -1,10 +1,10 @@
-let love = 'You used to love me !!'
+let love = 'You used to love me !!';
 
-console.log('first value of love', love)
+console.log('first value of love', love);
 
 love = 'I still love you';
 
-console.log('Reassinged value of love', love)
+console.log('Reassinged value of love', love);
 
 
 
