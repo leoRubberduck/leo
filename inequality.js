@@ -1,1 +1,1 @@
-let inequality !== inequality
+let inequality === inequality
