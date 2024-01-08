@@ -1,5 +1,5 @@
 
-let love = 'Hearts !!';
+let love 
 
 love = 'I still love you !!';
 
