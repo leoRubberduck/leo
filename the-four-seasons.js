@@ -1,1 +1,6 @@
-let seasons = [Spring,Summer,Autumn,Winter]
+let seasons = 
+["Spring",
+    "Summer",
+    "Autumn",
+    "Winter",
+]
