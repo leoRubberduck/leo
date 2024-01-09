@@ -5,8 +5,6 @@ let address = {
       name: String,      
       number: Number   
     }
-  };
-  
-  console.log(address);
+  }
   
 
