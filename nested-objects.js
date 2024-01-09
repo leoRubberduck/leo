@@ -1,11 +1,11 @@
 let address = {
 
-city: 'string',
+city: 'String',
 postcode: 'Number',
 street: {
 
-    name: 'string',
-    number: 'Number',
+    name: String,
+    number: Number,
 }
 }
 
