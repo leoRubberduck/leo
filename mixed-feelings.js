@@ -2,5 +2,5 @@ mixedFeelings = [
 
     type = [ 'hapiness']
 
-    level = [9]
+    level = ['9']
 ]
