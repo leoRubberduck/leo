@@ -2,10 +2,10 @@ let address = {
 
 city: 'String',
 postcode: 'Number',
-street: 'Object',
+street: {
+
+    name: 'String',
+    number: 'Number',
 }
-
-let name = String.name;
-let number = Number.number;
-
+}
 
