@@ -1,10 +1,13 @@
 let address = {
-    city: "hello"         
-    postcode: 1234     
-    street: {             
-      name: 'hi',      
-      number: 20,   
+    city: 'london',        
+    postcode: 12345,       
+    street: {                
+      name: 'clapham',   
+      number: 123            
     }
-  }
+  };
+  
+  console.log(address);
+  
   
 
