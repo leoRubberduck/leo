@@ -1,3 +1,3 @@
 alterEqo.self = 'altered'
 alterEgo.fullName = alterEgo.firstName + ' ' + alterEgo.lastName
-alterEgo.points = 10
+alterEgo.points = points + 10
