@@ -1,8 +1,8 @@
 let address = {
-    city: String,         
-    postcode: Number,     
+    city: "hello"         
+    postcode: 1234     
     street: {             
-      name: 'String',      
+      name: 'hi',      
       number: 20,   
     }
   }
