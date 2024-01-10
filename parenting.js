@@ -1,12 +1,12 @@
 let parent = {
-    child: parent
+    child: null
 
 ];
 
 
 let child = {
 
-    parent: child
+    parent: null
 };
 
 parent.child = child;
