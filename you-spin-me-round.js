@@ -1,3 +1,3 @@
-let rounded = num(1 * 8);
+let rounded = Math.round(num);
 
-let truncated = num.( 1 + 1);
+let truncated = Math.trunc(num);
