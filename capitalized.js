@@ -1,1 +1,1 @@
-let capitalized = word.Uppercase(1);
+let capitalized = word.toUpperCase() + word.slice(1).toLowerCase();
