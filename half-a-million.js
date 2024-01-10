@@ -1,0 +1,1 @@
+let loot = vault[secret];
