@@ -1,2 +1,2 @@
-Yayoi Kusama = popArtist.unshift();
-Takashi Murakam = popArtist.push();
+popArtists.unshift('Yayoi Kusama');
+popArtists.push('Takashi Murakami');
