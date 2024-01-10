@@ -1,1 +1,1 @@
-let linesCount = poem.trim();
+let linesCount = poem.trim().split('\n').length;
