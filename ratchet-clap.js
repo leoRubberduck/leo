@@ -1,1 +1,3 @@
-let ratchetClapin.join('👏 ');
+let ratchetClap = words.join(" 👏 ");
+
+ratchetClap += " 👏";
