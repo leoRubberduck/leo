@@ -1,1 +1,1 @@
-let  mirror = word.reverse();
+const  mirror = word.reverse();
