@@ -3,9 +3,8 @@ let duos = (batman, robin) => {
   }
   
   let duosWork = (batman, robin, action) => {
-    console.log(`${batman} and ${robin} ${happy} !`);
+    console.log(`${batman} and ${robin} ${action} !`);
   }
   
   duos('Batman', 'Robin'); 
-  duosWork('Batman', 'Robin', 'happy');
-  
+  duosWork('Batman', 'Robin', 'action'); 
