@@ -7,4 +7,4 @@ let duos = (batman, robin) => {
   }
   
   duos('Batman', 'Robin'); 
-  duosWork('tom', 'jerry', 'action'); 
+  duosWork('tom', 'jerry', 'action');
