@@ -8,3 +8,4 @@ function reply() {
 
 ask();
 
+reply();
