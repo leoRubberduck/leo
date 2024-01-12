@@ -6,3 +6,5 @@ function reply() {
     console.log('You pass butter.');
 }
 
+ask();
+
