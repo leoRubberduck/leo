@@ -1,4 +1,4 @@
-battleCry = (arg1) => {
+let battleCry = (arg1) => {
 
 
 }
