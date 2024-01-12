@@ -1,10 +1,11 @@
-let duos = (batman, Robin) => {
-    console.log(`${batman} and ${Robin} !`);
+let duos = (batman, robin) => {
+    console.log(`${batman} and ${robin} !`);
   }
-
+  
   let duosWork = (batman, robin, action) => {
-    console.log(`${batman} and ${robin} ${protect Gotham} !`);
+    console.log(`${batman} and ${robin} ${action} !`);
   }
-
+  
   duos('Batman', 'Robin'); 
-duosWork('Batman', 'Robin', 'protect Gotham');
+  duosWork('Batman', 'Robin', 'protect Gotham');
+  
