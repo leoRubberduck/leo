@@ -1,5 +1,5 @@
 function ask() {
-    console.log('What is my purpose?');
+    console.log('What is my purpose ?');
     console.log('ask works and is called: PASS');
 
 }
