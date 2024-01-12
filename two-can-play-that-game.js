@@ -6,5 +6,5 @@ let duos = (batman, robin) => {
     console.log(`${tom} and ${jerry} ${action} !`);
   }
   
-  duos('Batman', 'Robin'); 
+  duos('batman', 'robin'); 
   duosWork('tom', 'jerry', 'action');
