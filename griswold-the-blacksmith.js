@@ -1,11 +1,11 @@
 let purchasableGoods = [];
 
 if (playerCoins >= 3) {
-  purchasableGoods.push('Arrows');
+  purchasableGoods.push('arrows');
 }
 
 if (playerCoins >= 44) {
-  purchasableGoods.push('Boots');
+  purchasableGoods.push('boots');
 }
 
 if (playerCoins >= 299.99) {
