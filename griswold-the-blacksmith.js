@@ -1,7 +1,4 @@
-let playerCoins = 50;
-
 let purchasableGoods = [];
-
 
 if (playerCoins >= 3) {
   purchasableGoods.push('Arrows');
