@@ -1,0 +1,1 @@
+let happy = (question) => question.includes('happy') && question.includes('?');
