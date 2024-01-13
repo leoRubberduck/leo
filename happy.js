@@ -1,1 +1,1 @@
-let happy = (question) => /are you happy \?/i.test(question);
+let happy = (question) => /\bhappy\b/i.test(question) && /\?/.test(question);
