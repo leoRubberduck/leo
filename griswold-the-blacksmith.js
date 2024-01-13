@@ -9,5 +9,5 @@ if (playerCoins >= 44) {
 }
 
 if (playerCoins >= 299.99) {
-  purchasableGoods.push('Sword (Limited Offer)');
+  purchasableGoods.push('sword (Limited Offer)');
 }
