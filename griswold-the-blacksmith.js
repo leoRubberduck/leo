@@ -1,25 +1,16 @@
-const purchasableGoods = [];
+let playerCoins = 50;
 
-const arrows = { name: 'Arrows', cost: 3 };
-const boots = { name: 'Boots', cost: 44 };
-const sword = { name: 'Sword', cost: 299.99, limitedOffer: true };
+let purchasableGoods = [];
 
-if (playerCoins >= arrows.cost) {
-    purchasableGoods.push(arrows);
+
+if (playerCoins >= 3) {
+  purchasableGoods.push('Arrows');
 }
 
-if (playerCoins >= boots.cost) {
-    purchasableGoods.push(boots);
+if (playerCoins >= 44) {
+  purchasableGoods.push('Boots');
 }
 
-if (playerCoins >= sword.cost && sword.limitedOffer) {
-    purchasableGoods.push(sword);
-
-
+if (playerCoins >= 299.99) {
+  purchasableGoods.push('Sword (Limited Offer)');
 }
-
-purchasableGoods.sort((a, b) => a.cost - b.cost);
-
-
-
-
