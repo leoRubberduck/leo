@@ -1,4 +1,4 @@
-f (customer.cash >= 9.99 || customer.hasVoucher) {
+if (customer.cash >= 9.99 || customer.hasVoucher) {
     
     ticketSold++;
 }
