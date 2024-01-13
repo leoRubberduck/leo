@@ -1,1 +1,1 @@
-let happy = (question) => question.toLowerCase().includes('happy') && question.includes('?');
+let happy = (question) => /are you happy \?/i.test(question);
