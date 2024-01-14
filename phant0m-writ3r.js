@@ -1,11 +1,6 @@
-if (!(startsWithAl(word) && endsWithIon(word))) {
+
+if (!word.toLowerCase().startsWith('al') && !word.toLowerCase().endsWith('ion')) {
+    
     console.log(word);
   }
   
-  function startsWithAl(word) {
-    return word.toLowerCase().startsWith('al');
-  }
-  
-  function endsWithIon(word) {
-    return word.toLowerCase().endsWith('ion');
-  }
