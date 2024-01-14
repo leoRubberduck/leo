@@ -1,3 +1,3 @@
-
-console.log(word.startsWith('al'));
-console.log(word.endsWith('ion'));
+if (!(word.startsWith('al') && word.endsWith('ion'))) {
+    console.log(word);
+}
