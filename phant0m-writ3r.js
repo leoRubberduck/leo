@@ -1,4 +1,3 @@
 
-
-console.log(str1.startsWith('al'));
-console.log(str1.endsWith('ion'));
+console.log(word.startsWith('al'));
+console.log(word.endsWith('ion'));
