@@ -1,12 +1,12 @@
-function extreme(numbers) {
-    if (!numbers) return null;
-    if (numbers.length === 0) return {};
-    if (numbers.length === 1) {
-      const [first] = numbers; 
+function extreme(arr) {
+    if (!arr) return null;
+    if (arr.length === 0) return {};
+    if (arr.length === 1) {
+      const [first] = arr;
       return { bigest: first, smallest: first };
-    };
+    }
     return {
-      bigest: Math.max(...numbers),
-      smallest: Math.min(...numbers)
+      bigest: Math.max(...arr),
+      smallest: Math.min(...arr)
     };
-  };
+  }
