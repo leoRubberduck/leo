@@ -1,9 +1,19 @@
-function extremeWithMapApply(arr) {
+
+function extreme(arr) {
     if (!arr) return null;
     if (arr.length === 0) return {};
   
-    return {
-      bigest: Math.max.apply(null, arr.map(subArr => Math.max(...subArr))),
-      smallest: Math.min.apply(null, arr.map(subArr => Math.min(...subArr))),
-    };
+    let smallestValue = arr[0];
+    let bigestValue = arr[0];
+  
+    for (let i = 1; i < arr.length; i++) {
+      if (arr[i] < smallestValue) {
+        smallestValue = arr[i];
+      }
+      if (arr[i] > biggestValue) {
+        bigestValue = arr[i];
+      }
+    }
+  
+    return { biggest: bigestValue, smallest: smallestValue };
   }
