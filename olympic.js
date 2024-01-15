@@ -1,3 +1,7 @@
+
+const pedroIndex = athletes.indexOf('Pedro');
+
+
 if (pedroIndex >= 0 && pedroIndex <= 2) {
     
     switch (pedroIndex) {
