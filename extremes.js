@@ -11,7 +11,7 @@ function extreme(numbers) {
       if (numbers[i] < smallest) {
         smallest = numbers[i];
       }
-      if (numbers[i] > biggest) {
+      if (numbers[i] > bigest) {
         bigest = numbers[i];
       }
     }
