@@ -1,20 +1,25 @@
-function extreme() {
-    if (arguments[0].length === 0) {
+function extreme(numbers) {
+    if (numbers.length === 0) {
+
       return null;
     }
   
-    let smallest = arguments[0][0];
-    let bigest = arguments[0][0];
+    let smallest = numbers[0];
+    let bigest = numbers[0];
   
-    for (let i = 1; i < arguments[0].length; i++) {
-      if (arguments[0][i] < smallest) {
-        smallest = arguments[0][i];
+    for (let i = 1; i < numbers.length; i++) {
+      if (numbers[i] < smallest) {
+        smallest = numbers[i];
       }
-      if (arguments[0][i] > bigest) {
-        bigest = arguments[0][i];
+      if (numbers[i] > bigest) {
+        bigest = numbers[i];
       }
     }
   
     return { bigest, smallest };
   }
+  
+
+  console.log(extreme([-1, 0, 10, 5]));      
+  console.log(extreme([22, 7, 32, 99, 54]));     
   
