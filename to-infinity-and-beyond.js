@@ -1,7 +1,4 @@
-const candidate = {
-    physicalAptitudes: 85,
-    noFamily: true
-  };
+
   
   if (candidate.physicalAptitudes < 80) {
     console.log('Stay on Earth');
