@@ -9,10 +9,10 @@ if (pedroIndex >= 0 && pedroIndex <= 2) {
         console.log('🥇');
         break;
       case 1:
-        console.log('🥈 Pedro is #2');
+        console.log('🥈');
         break;
       case 2:
-        console.log('🥉 Pedro is #3');
+        console.log('🥉');
         break;
     }
   } else {
