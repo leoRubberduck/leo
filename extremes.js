@@ -14,7 +14,7 @@ function extreme(arr) {
       }
     }
   
-    return { biggest: bigestValue, smallest: smallestValue };
+    return { bigest: bigestValue, smallest: smallestValue };
   }
   
   console.log(extreme([-1, 0, 10, 5]));      
