@@ -10,7 +10,7 @@ function extreme(arr) {
         smallestValue = arr[i];
       }
       if (arr[i] > bigestValue) {
-        biggestValue = arr[i];
+        bigestValue = arr[i];
       }
     }
   
