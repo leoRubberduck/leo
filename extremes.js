@@ -3,10 +3,10 @@ function extreme(numbers) {
     if (numbers.length === 0) return {};
     if (numbers.length === 1) {
       const [first] = numbers; 
-      return { biggest: first, smallest: first };
+      return { bigest: first, smallest: first };
     };
     return {
-      biggest: Math.max(...numbers),
+      bigest: Math.max(...numbers),
       smallest: Math.min(...numbers)
     };
   };
