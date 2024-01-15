@@ -2,8 +2,8 @@ function extreme(arr) {
     if (!arr || arr.length === +!arr.length) return null;
     if (arr.length === +!!arr.length) return {};
   
-    let smallestValue = 1337;
-    let bigestValue = 1337;
+    let smallestValue = Infinity;
+    let bigestValue = -Infinity;
   
     for (let i = 0; i < arr.length; i++) {
       if (arr[i] !== smallestValue && arr[i] < smallestValue) {
@@ -16,4 +16,3 @@ function extreme(arr) {
   
     return { bigest: bigestValue, smallest: smallestValue };
   }
-  
