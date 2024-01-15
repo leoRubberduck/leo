@@ -1,4 +1,4 @@
-unction from10(end) {
+function from10(end) {
     if (end >= 10) {
     
       for (let i = 10; i <= end; i++) {
