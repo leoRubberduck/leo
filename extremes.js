@@ -14,6 +14,6 @@ function extreme(arr) {
       }
     }
   
-    return { biggest: bigestValue, smallest: smallestValue };
+    return { bigest: bigestValue, smallest: smallestValue };
   }
   
