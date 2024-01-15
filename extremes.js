@@ -1,20 +1,12 @@
-function extreme(arr) {
-    if (arr.length === 0) {
-      return null;
-    }
-  
-    let smallest = arr[0];
-    let bigest = arr[0];
-  
-    for (let i = 1; i < arr.length; i++) {
-      if (arr[i] < smallest) {
-        smallest = arr[i];
-      }
-      if (arr[i] > bigest) {
-        biggest = arr[i];
-      }
-    }
-  
-    return { bigest, smallest };
-  }
-  
+function findBiggestAndSmallest(numbers) {
+    if (!numbers) return null;
+    if (numbers.length === 0) return {};
+    if (numbers.length === 1) {
+      const [first] = numbers; 
+      return { biggest: first, smallest: first };
+    };
+    return {
+      biggest: Math.max(...numbers),
+      smallest: Math.min(...numbers)
+    };
+  };
