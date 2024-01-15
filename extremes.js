@@ -1,4 +1,4 @@
-function findBiggestAndSmallest(numbers) {
+function extreme(numbers) {
     if (!numbers) return null;
     if (numbers.length === 0) return {};
     if (numbers.length === 1) {
