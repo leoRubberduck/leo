@@ -1,14 +1,8 @@
-function jsFileOnly(filenames) {
-    return filenames.filter((filename) => filename.endsWith('.js'));
+function toSquares(numbers) {
+    return numbers.map((num) => num * num);
   }
   
-  const result = jsFileOnly([
-    'essay.docx',
-    'index.html',
-    'info.txt',
-    'lib.js',
-    'README.md',
-    'script.js',
-  ]);
+  const result = toSquares([1, 2, 3, 4]);
+  console.log(result);
   
   
