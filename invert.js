@@ -1,3 +1,12 @@
-def invert(input_dict):
-    inverted_dict = {v: k for k, v in input_dict.items()}
-    return inverted_dict
+function invert(inputObject) {
+    const invertedObject = {};
+
+    for (const key in inputObject) {
+        if (inputObject.hasOwnProperty(key)) {
+            const value = inputObject[key];
+            invertedObject[value] = key;
+        }
+    }
+
+    return invertedObject;
+}
