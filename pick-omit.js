@@ -1,21 +1,12 @@
-function pickKeys(obj, keysToPick) {
-    if (!Array.isArray(keysToPick)) {
-        keysToPick = [keysToPick];
-    }
-
+function pick(obj, keysToPick) {
     return Object.fromEntries(
-        Object.entries(obj)
-            .filter(([key]) => keysToPick.includes(key))
+      Object.entries(obj).filter(([key]) => keysToPick.includes(key))
     );
-}
-
-function omitKeys(obj, keysToOmit) {
-    if (!Array.isArray(keysToOmit)) {
-        keysToOmit = [keysToOmit];
-    }
-
+  }
+  
+  function omit(obj, keysToOmit) {
     return Object.fromEntries(
-        Object.entries(obj)
-            .filter(([key]) => !keysToOmit.includes(key))
+      Object.entries(obj).filter(([key]) => !keysToOmit.includes(key))
     );
-}
+  }
+  
