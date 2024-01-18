@@ -1,31 +1,21 @@
-function pickKeys(inputObject, keysToPick) {
-    const pickedObject = {};
-
-    if (Array.isArray(keysToPick)) {
-        keysToPick.forEach(key => {
-            if (inputObject.hasOwnProperty(key)) {
-                pickedObject[key] = inputObject[key];
-            }
-        });
-    } else if (typeof keysToPick === 'string' && inputObject.hasOwnProperty(keysToPick)) {
-        pickedObject[keysToPick] = inputObject[keysToPick];
+function pickKeys(obj, keysToPick) {
+    if (!Array.isArray(keysToPick)) {
+        keysToPick = [keysToPick];
     }
 
-    return pickedObject;
+    return Object.fromEntries(
+        Object.entries(obj)
+            .filter(([key]) => keysToPick.includes(key))
+    );
 }
 
-function omitKeys(inputObject, keysToOmit) {
-    const omittedObject = { ...inputObject };
-
-    if (Array.isArray(keysToOmit)) {
-        keysToOmit.forEach(key => {
-            if (omittedObject.hasOwnProperty(key)) {
-                delete omittedObject[key];
-            }
-        });
-    } else if (typeof keysToOmit === 'string' && omittedObject.hasOwnProperty(keysToOmit)) {
-        delete omittedObject[keysToOmit];
+function omitKeys(obj, keysToOmit) {
+    if (!Array.isArray(keysToOmit)) {
+        keysToOmit = [keysToOmit];
     }
 
-    return omittedObject;
+    return Object.fromEntries(
+        Object.entries(obj)
+            .filter(([key]) => !keysToOmit.includes(key))
+    );
 }
