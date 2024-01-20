@@ -1,36 +1,23 @@
-const args = process.argv.slice(2);
+import { argv } from 'process';
 
-if (args.length === 0) {
-    console.log('Hi.');
-    process.exit(1);
-}
+const originalArgument = argv[2];
 
 function makeVeryDisco(word) {
-    const length = word.length;
-    const middle = Math.ceil(length / 2);
-    const firstPart = word.slice(0, middle);
-    const secondPart = word.slice(middle);
-    const discoWord = secondPart + firstPart;
-    return discoWord;
+  const middle = Math.ceil(word.length / 2);
+  const firstChunk = word.slice(0, middle);
+  const secondChunk = word.slice(middle);
+  return secondChunk + firstChunk;
 }
 
-function makeVeryDisco(word) {
-    const length = word.length;
-    const middle = Math.ceil(length / 2);
-    const firstPart = word.slice(0, middle);
-    const secondPart = word.slice(middle);
-    const discoWord = secondPart + firstPart;
-    return discoWord;
+function makeVeryDiscoSentence(sentence) {
+  return sentence.split(/\s+/).map(makeVeryDisco).join(' ');
 }
 
-args.forEach((arg) => {
-    
-    if (arg.includes(' ')) {
-        const discoSentence = arg.split(' ').map(makeVeryDisco).join(' ');
-        console.log(discoSentence);
-    } else {
-    
-        const discoWord = makeVeryDisco(arg);
-        console.log(discoWord);
-    }
-});
+if (!originalArgument) {
+  console.log('Please provide an argument');
+} else if (typeof originalArgument !== 'string') {
+  console.log('Please provide a string argument');
+} else {
+  const veryDiscoResult = makeVeryDiscoSentence(originalArgument);
+  console.log(veryDiscoResult);
+}
